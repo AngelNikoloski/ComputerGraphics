@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive Cubes - Three.js</title>
+        <style>
+            body{
+                margin: 0; overflow: hidden;
+                font-family: Arial, sans-serif;
+            }
+            canvas{
+                display: inline-block;
+            }
+            #info-panel {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 15px;
+                border-radius: 8px;
+                min-width: 250px;
+                font-size: 14px;
+                line-height: 1.4;
+                z-index: 100;
+            }
+            #info-panel h3 {
+                margin: 0 0 10px 0;
+                color: #4CAF50;
+            }
+            #info-panel p {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="info-panel">
+            <h3>Cube Information</h3>
+            <p>Click a cube to see its information here.</p>
+        </div>
+        <script type="module">
+            import './main.js';
+        </script>
+    </body>
+</html>
